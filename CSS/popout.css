@@ -1,0 +1,101 @@
+.overlay { /*overlay to blackout the page*/
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Adjust the z-index to ensure it appears on top */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup p {
+    margin: 0;
+}
+
+.popup .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* add new card background box*/
+.new-card-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form elements */
+.new-card-box label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.new-card-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+
+.card-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form elements */
+.card-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.card-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+
+.cvv {
+    width: 11%;
+    min-width: 10%;
+    box-sizing: unset;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the CVV and expiry date inputs to be on the same line */
+.new-card-box .cvv-expiry-container {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.new-card-box .cvv-expiry-container input {
+    flex: 1;
+}
+
+/* new card style end */

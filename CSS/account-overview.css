@@ -1,0 +1,75 @@
+.container {
+
+    width: 80%;
+    margin: 0 auto;
+    padding: 90px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+
+
+}
+
+.card .changePassword {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Optional: Center align content */
+}
+
+.card .saveButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Optional: Center align content */
+}
+
+#personal-info-box p {
+    padding-top: 0px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    justify-content: left;
+    margin-right: 10px;
+}
+
+.card button:hover {
+    background-color: #45a049;
+}
+
+.account-header {
+    padding-top: 30px;
+    font-size: 50px;
+    text-decoration: underline;
+    font-weight: bold;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .account-header {
+        padding-top: 35px;
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,16 @@
+<div id="delete-card-popout" class="overlay"> <!-- Popout for deleting a card -->
+    <!-- Popout content -->
+    <div class="new-card-box" style="width: fit-content;">
+
+        <div style="display: flex;">
+            <p>Are you sure you want to delete card ending in </p>
+            <p id="selectedCardNumber" style="font-weight:bold; margin-left: 4px;"></p>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+            <button style="background-color: #f44336; color: white;"
+                    onclick='deleteCard()'>Delete
+            </button>
+            <button style="background-color: #ccc;" onclick="popoutToggler('delete-card-popout')">Cancel</button>
+        </div>
+    </div>
+</div>

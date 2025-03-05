@@ -1,0 +1,261 @@
+.top-bar { /* the nav bar at the top overall style */
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    position: fixed; /* Fixed position to stay at the top */
+    top: 0; /* Position at the top */
+    left: 0;
+    z-index: 1000; /* Set a high z-index to ensure it's above other content */
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* shopping cart part of the navbar*/
+.cart-header-display {
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.cart-header-display:hover {
+    background-color: whitesmoke;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.nav-header {
+    color: white;
+    flex-grow: 1; /* This will allow the h1 to grow and push adjacent elements to the sides */
+    text-align: center; /* Center the text within the h1 element */
+}
+
+.nav-section {
+    display: flex;
+    align-items: center;
+}
+
+.cart-header-display:hover img,
+.cart-header-display:hover .price-text {
+    filter: brightness(0) invert(0);
+}
+
+.shopping-cart-svg {
+    filter: brightness(0) invert(1);
+    height: 40px;
+    width: 50px;
+    color: white;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
+.cart-link {
+    display: flex; /* Use flexbox for layout control */
+    align-items: center; /* Align items vertically in the center */
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+
+}
+
+.price-text {
+    font-size: 25px;
+    /* Adjust as needed to create space between image and text */
+    margin: 0 3px 0 0;
+    font-weight: bold;
+    padding: 0;
+}
+
+/* end cart part of nav bar*/
+
+.nav-form-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
+
+.nav-log-button { /* login/out button */
+    background-color: #4CAF50;
+    color: white;
+    padding: 4px 10px;
+    font-size: 19px;
+    border-radius: 5px;
+    height: auto;
+    width: auto;
+    display: inline-flex;
+    text-wrap: normal;
+    margin-left: auto;
+}
+
+.nav-links {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.desktop-bar {
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+}
+
+.mobile-bar {
+    display: none;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.hamburger-svg {
+    filter: brightness(0) invert(1);
+    height: 30px;
+    width: 30px;
+    color: white;
+    margin: 0;
+    border: 0;
+    padding-left: 5px;
+}
+
+
+.overlay-menu {
+    z-index: 1000; /* Adjust the z-index to ensure it appears on top */
+    position: fixed;
+    border: white;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background-color: #3a3939; /* Semi-transparent black overlay */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-top: 2;
+
+}
+
+.overlay-menu a {
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.hamburger-content {
+    margin: 0;
+    padding: 0;
+    display: block;
+    align-content: center;
+    height: 75%;
+    width: 75%;
+    font-size: 50px;
+}
+
+
+@media only screen and (max-width: 1270px) {
+    .desktop-bar {
+        display: none;
+    }
+
+    .overlay-menu.active {
+        display: flex;
+    }
+
+    .mobile-bar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .top-bar {
+        height: 3%;
+    }
+
+    .cart-header-display {
+        display: inline;
+        align-items: center;
+        border: none;
+        padding: 0px;
+        margin-right: 10px;
+
+    }
+
+    .shopping-cart-svg {
+        filter: brightness(0) invert(1);
+        height: 100%;
+        width: 100%;
+        color: white;
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+
+    .price-text {
+        font-size: 100%;
+        /* Adjust as needed to create space between image and text */
+        margin: 0 3px 0 0;
+        font-weight: bold;
+        padding: 0;
+    }
+
+}
+
+/*@media only screen (max-width: 1279px)
+{
+.top-bar {
+    height: 5%;
+    margin-bottom: 5%;
+}
+
+.overlay-menu.active {
+    display: flex;
+}
+
+.desktop-bar {
+    display: none;
+}
+
+.mobile-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+}
+
+
+
