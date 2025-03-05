@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Everyman Menu</title>
-    <link rel="stylesheet" href="CSS/main-styles.css">
-    <link rel="stylesheet" href="CSS/nav-bar.css">
-    <link rel="stylesheet" href="CSS/overwrite.css">
-    <script src="JavaScript/popout-toggler.js" defer></script>
+    <link rel="stylesheet" href="../CSS/main-styles.css">
+    <link rel="stylesheet" href="../CSS/nav-bar.css">
+    <link rel="stylesheet" href="../CSS/overwrite.css">
+    <script src="../JavaScript/popout-toggler.js" defer></script>
 </head>
 <body>
 <?php include('../PHP_Handling/create-nav-bar.php'); ?>
@@ -49,7 +49,7 @@ if ($food_menu->num_rows > 0) {
             $price = format_price($row["Price"]);
             echo "<td>£$price </td>";
             echo "<td>";
-            echo "<form action='PHP_Handling/cart_updater.php' method='post'>";
+            echo "<form action='../PHP_Handling/cart_updater.php' method='post'>";
             echo "<input type=\"hidden\" name=\"added_item_type\" value=\"food\">";
             echo "<button type='submit' name='added_item_to_cart' value='" . $row["Food_ID"] . "'>Add</button>";
             echo "</form>";
@@ -88,7 +88,7 @@ if ($drink_menu->num_rows > 0) {
             $price = format_price($row["Price"]);
             echo "<td>£$price </td>";
             echo "<td>";
-            echo "<form id='myForm' action='PHP_Handling/cart_updater.php' method='post'>";
+            echo "<form id='myForm' action='../PHP_Handling/cart_updater.php' method='post'>";
             echo "<input type=\"hidden\" id=\"added_item_type\" name=\"added_item_type\" value=\"drink\">";
             echo "<button type='submit' name='added_item_to_cart' value='" . $row["Drink_ID"] . "'>Add</button>";
             echo "</form>";
