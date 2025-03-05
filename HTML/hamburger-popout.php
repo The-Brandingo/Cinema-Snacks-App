@@ -1,7 +1,7 @@
 <div class="overlay-menu" id="overlayMenu">
     <div class="hamburger-content">
         <div>
-            <a href="../Pages/menu.php">Menu</a>
+            <a href="../index.php">Menu</a>
             <hr>
             <a href="../Pages/account_overview.php">Account</a>
             <hr>

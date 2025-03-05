@@ -196,7 +196,7 @@ function addToCart($item_id, $item_type)
         $query = "INSERT INTO shopping_cart (Item_ID, Quantity, Item_Type, Customer_ID) VALUES ($item_id, 1, '$item_type', $cart_id)";
     }
     $connection->query($query);
-    header("Location: ../Pages/menu.php");
+    header("Location: ../Pages/index.php");
     exit();
 
 }

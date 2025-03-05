@@ -7,7 +7,7 @@ foreach (glob("../PHP_Handling/functions/*.php") as $filename) {
 echo '<nav class="top-bar">';
 echo '<div class = "desktop-bar">';
 echo '<div class = "nav-section left" >';
-echo '<a href="../Pages/menu.php" class="nav-links">Menu</a>';
+echo '<a href="../index.php" class="nav-links">Menu</a>';
 echo '<a href="../Pages/account_overview.php" class="nav-links" >Account</a>';
 echo '<div class="cart-header-display">';
 $price = getCartTotal();
@@ -17,7 +17,7 @@ echo '<span class="price-text">£' . $price . '</span>';
 echo '</a>';
 echo '</div>';
 echo '</div>';
-echo '<a href="../Pages/menu.php" style="color: white;display:inline;font-size: 300%;font-weight: bold;margin:0;padding:0; ">EVERYMAN  </a>';
+echo '<a href="../index.php" style="color: white;display:inline;font-size: 300%;font-weight: bold;margin:0;padding:0; ">EVERYMAN  </a>';
 echo '<div class = "nav-section right" >';
 echo '<div class="nav-form-container" >';
 if (!isset($_SESSION['user_id'])) {

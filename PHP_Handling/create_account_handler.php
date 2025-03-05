@@ -46,7 +46,7 @@ if (isset($_POST['create_account'])) { // this looks for the form submitting
             $_SESSION['account_creation_success'] = "Account created successfully";
             set_session(login_verification($email));
             unset_attempts();
-            header("Location:../Pages/menu.php");
+            header("Location:../Pages/index.php");
         } else { // Account creation failed, handle accordingly
             keep_attempts($firstName, $surname, $dateOfBirth, $email, $phoneNumber);
             signup_error("Error occurred please try again");
